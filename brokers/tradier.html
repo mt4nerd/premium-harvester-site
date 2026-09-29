@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Connect Tradier</title>
+<meta name="description" content="How to connect your Tradier brokerage or paper account to Premium Harvester.">
+<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,600..800&family=IBM+Plex+Mono:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site-head">
+    <a class="brand" href="../index.html"><img src="../assets/logo.svg" alt=""><span>Premium Harvester</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="../ios.html">iPhone</a>
+      <a href="../android.html">Android</a>
+      <a href="tradier.html" aria-current="page">Connect a broker</a>
+      <a href="../support.html">Support</a>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="h">
+      <div class="stack prose">
+        <span class="status live">Available</span>
+        <h1 id="h">Connect Tradier</h1>
+        <p class="lede">Premium Harvester places your trades in your own Tradier account using your personal access token. It takes about five minutes.</p>
+      </div>
+      <dl class="facts">
+        <dt>You need</dt><dd>A Tradier Brokerage account, and a Trader or Autopilot plan</dd>
+        <dt>Practice first</dt><dd>Every Tradier account comes with a free paper account: practice money and 15-minute-delayed quotes</dd>
+        <dt>Other brokers</dt><dd><a href="etrade.html">E*Trade</a> is coming soon</dd>
+      </dl>
+    </section>
+
+    <section aria-labelledby="s1">
+      <h2 id="s1">1. Get your token and account number</h2>
+      <ol class="steps prose">
+        <li>Open a Tradier Brokerage account at <a href="https://tradier.com">tradier.com</a> if you don't have one.</li>
+        <li>Sign in and go to <a href="https://web.tradier.com/user/api">web.tradier.com/user/api</a>. Tradier shows two tokens there: a <b>production</b> token for your real account and a <b>sandbox</b> token for your paper account.</li>
+        <li>Copy the token for the account you want to connect.</li>
+        <li>Note your account number. It looks like <code>6YA000001</code> and is shown on <a href="https://web.tradier.com">web.tradier.com</a>.</li>
+      </ol>
+      <p class="note prose">Your token lets software trade your account. Paste it only into the Premium Harvester app, and never send it by email or message. You can generate a new token on the same Tradier page at any time; the old one stops working.</p>
+    </section>
+
+    <section aria-labelledby="s2">
+      <h2 id="s2">2. Add it in the app</h2>
+      <ol class="steps prose">
+        <li>Open the <b>Account</b> tab and find <b>Connect Broker</b>.</li>
+        <li>Choose <b>Tradier</b>, then the account type: <b>IRA</b> or <b>Taxable</b>.</li>
+        <li>Enter your <b>Account ID</b> and paste your token into <b>Bearer Token</b>.</li>
+        <li>For a paper account, turn on <b>Paper account (sandbox)</b> and use your sandbox token.</li>
+        <li>Save. The account shows as <b>Connected</b>, and your balance and holdings sync.</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="s3">
+      <h2 id="s3">What happens next</h2>
+      <ul class="ticks prose">
+        <li>The queue marks each pick against your own cash and limits.</li>
+        <li>Approving a pick shows you the live quote and the order before anything is sent.</li>
+        <li>Your holdings sync from Tradier before the open and after the close, and whenever you tap <b>Sync</b>. Order fills update on their own.</li>
+        <li>Your token is stored encrypted on our server and used only to read your account and place the orders you approve. To stop it, tap <b>Disconnect</b> on the account in the app, or generate a new token at Tradier.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <nav aria-label="Footer">
+      <a href="../index.html">Home</a><a href="etrade.html">E*Trade</a>
+      <a href="../privacy.html">Privacy</a><a href="../support.html">Support</a>
+    </nav>
+    <p>Tradier is a registered trademark of its owner; Premium Harvester is not affiliated with Tradier. Premium Harvester is not investment advice and is not a broker.</p>
+  </footer>
+</div>
+</body>
+</html>
